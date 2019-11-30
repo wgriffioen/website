@@ -1,0 +1,159 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* I ♥ box-sizing: border-box */
+* { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+
+html {
+    background: #eee;
+}
+
+body {
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    background: #fff;
+    color: #444;
+
+    font: normal 16px/22px 'Ubuntu', 'Helvetica', 'Arial', sans-serif;
+
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    -webkit-text-size-adjust:100%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+
+a:visited {
+    border-bottom: 1px solid #eee;
+}
+
+/* Begin styling header {{{ */
+header {
+    padding: 1em;
+    border-bottom: 1px solid #efefef;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header p {
+    margin: 1em 0;
+}
+/* }}} End styling header */
+
+/* Begin styling tweet-container {{{ */
+#tweet-container {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #efefef;
+    background: #efefef;
+    padding: 1em;
+}
+
+#tweet-container h1 {
+    float: left;
+    font-size: 1em;
+    font-weight: bold;
+    padding-right: .5em;
+}
+
+#tweet {
+    font-style: italic;
+}
+/* }}} End styling tweet-container */
+
+/* Begin styling content {{{ */
+#content {
+    padding: 1em;
+    border-bottom: 1px solid #efefef;
+    border-top: 1px solid #ccc;
+}
+
+#content p:first-child {
+    font-weight: bold;
+}
+
+#elsewhere li {
+    height: 70px;
+    padding: 10px;
+    padding-left: 70px;
+}
+
+#elsewhere li .link {
+    display: block;
+    margin: .5em 0;
+}
+
+#elsewhere li.twitter {
+    background: transparent url('../images/twitter.png') 10px 50% no-repeat;
+    background-image: -webkit-image-set(url('../images/twitter.png') 1x, url('../images/twitter2x.png') 2x)
+}
+
+#elsewhere li.github {
+    background: transparent url('../images/github.png') 10px 50% no-repeat;
+    background-image: -webkit-image-set(url('../images/github.png') 1x, url('../images/github2x.png') 2x)
+}
+/* }}} End styling content */
+
+/* Begin styling footer {{{ */
+footer {
+    padding: 1em;
+    text-align: center;
+    font-size: .8em;
+    border-top: 1px solid #ccc;
+
+    background-image: linear-gradient(bottom, rgb(204,204,204) 0%, rgb(255,255,255) 87%);
+    background-image: -o-linear-gradient(bottom, rgb(204,204,204) 0%, rgb(255,255,255) 87%);
+    background-image: -moz-linear-gradient(bottom, rgb(204,204,204) 0%, rgb(255,255,255) 87%);
+    background-image: -webkit-linear-gradient(bottom, rgb(204,204,204) 0%, rgb(255,255,255) 87%);
+    background-image: -ms-linear-gradient(bottom, rgb(204,204,204) 0%, rgb(255,255,255) 87%);
+}
+/* }}} End styling footer */
